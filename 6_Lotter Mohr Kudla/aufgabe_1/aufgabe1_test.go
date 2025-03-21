@@ -2,7 +2,7 @@ package aufgabe1
 
 import "fmt"
 
-func ExampleStringsWithoutDigits() {
+func ExampleStringsWithoutDigit() {
 	l1 := []string{""}
 	l2 := []string{"abc", "123", "a1b2c3", "hello"}
 	l3 := []string{"123", "456", "789"}

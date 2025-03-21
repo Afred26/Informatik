@@ -6,5 +6,20 @@ package aufgabe1
 func StringsWithoutDigit(list []string) []string {
 
 	result := []string{}
+	for _, el := range list {
+		if WithoutDigit(el) {
+			result = append(result, el)
+		}
+	}
 	return result
+}
+
+func WithoutDigit(s string) bool {
+	if s == "" {
+		return true
+	}
+	if s[0] >= '0' && s[0] <= '9' {
+		return false
+	}
+	return WithoutDigit(s[1:])
 }
